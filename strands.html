@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosales National High School - SHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="images/logosmall.png" alt="Rosales National High School Logo"></a>
+        <h5>ROSALES NATIONAL HIGH SCHOOL</h5>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="strands.html">STRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="stem.html">STEM</a></li>
+                        <li><a href="abm.html">ABM</a></li>
+                        <li><a href="humss.html">HUMSS</a></li>
+                        <li><a href="tvl.html">TVL</a></li>
+                    </ul>
+                </li> 
+                <li><a href="events.html">EVENTS</a></li> 
+                <li><a href="contact.html">CONTACT</a></li>   
+                <li><a href="about us.html">ABOUT US</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Strands</h1>
+</section>
+
+<!----- Strands ----->
+<section class="strands-tracks">
+    <h1>Strands and Tracks</h1>
+    <p>At Rosales National High School (RNHS), students have the opportunity to choose from various tracks and strands depending on their interests and future career goals. The school offers two main tracks: the Academic Track and the Technical-Vocational-Livelihood (TVL) Track. Each track has specialized strands to help students focus on subjects that align with their passion.</p>
+    <hr>
+    <br>
+    <h1>Academic Track</h1>
+    <p>This track is for students who want to pursue higher education after high school. It provides specialized subjects that prepare students for college and university courses.</p>
+    <div class="row">
+        <div class="tracks-col">
+            <h3>STEM (Science, Technology, Engineering, Mathematics)</h3>
+            <p>This strand is ideal for students who are interested in fields like engineering, medicine, information technology, and other science-related careers. It focuses on advanced math and science subjects.</p>
+        </div>
+        <div class="tracks-col">
+            <h3>ABM (Accountancy, Business, and Management)</h3>
+            <p>Perfect for students interested in business, economics, and finance, the ABM strand prepares students for a career in management, accounting, and entrepreneurship.</p>
+        </div>
+        <div class="tracks-col">
+            <h3>HUMSS (Humanities and Social Sciences)</h3>
+            <p>The HUMSS strand is for students who want to pursue careers in social sciences, psychology, teaching, law, journalism, and arts. It focuses on subjects like communication, history, and sociology.</p>
+        </div>
+        <div class="tracks-col">
+            <h3>GAS (General Academic Strand)</h3>
+            <p>Students in GAS can take a mix of academic and technical subjects depending on their interests and career goals. It's ideal for those who want flexibility in their choices, and it prepares them for both higher education and entry-level jobs. It’s a great option for students who may not yet know exactly what career they want to pursue but want a broad foundation in academics.</p>
+        </div>
+        <br>
+        <h1>Technical-Vocational-Livelihood (TVL) Track</h1>
+        <p>This track is designed for students who want to develop practical skills and enter the workforce right after high school. It prepares students for technical and vocational careers through hands-on training. </p>
+        <div class="tracks-col">
+            <h3>ICT (Information and Communication Technology)</h3>
+            <p>This strand focuses on technology-related skills, including computer programming, web development, and computer hardware servicing. Students who choose this strand can pursue careers in IT, software development, and tech support.</p>
+        </div>
+        <div class="tracks-col">
+            <h3>HE (Home Economics)</h3>
+            <p>This strand offers students skills in cooking, hospitality, and other household management areas. It's perfect for those who want to work in the hospitality industry or start their own business.</p>
+        </div>
+        <div class="tracks-col">
+            <h3>SMAW (Shielded Metal Arc Welding)</h3>
+            <p>SMAW, also known as stick welding, is one of the most common welding techniques used in construction, manufacturing, and repair industries. Students will learn how to work with metal using welding tools and safety practices. This program opens up career opportunities in fields like construction, manufacturing, and metalworking.</p>
+        </div>
+        <div class="tracks-col">
+            <h3>Dressmaking</h3>
+            <p>Students in this program will learn how to sew, alter garments, and create their own clothing designs. It’s an excellent option for students interested in fashion, tailoring, or entrepreneurship. With skills in dressmaking, students can work in the fashion industry, start their own clothing business, or even become self-employed seamstresses or designers.</p>
+        </div>
+    </div>
+</section>
+
+<!----- Footer ----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>RNHS is a place where students can grow, learn, 
+        and discover their potential. We’re dedicated 
+        to creating a <br>supportive environment that 
+        encourages academic excellence, creativity, and 
+        personal development. <br>With a focus on building 
+        knowledge, skills, and character, we aim to prepare 
+        every student for a bright <br>and successful future.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by VMA</p>
+</section>
+
+    <!-----JavaScript for Toggle Menu----->
+<script>
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+            navLinks.style.right = "0";
+    }
+    function hideMenu(){
+            navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosales National High School - SHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="images/logosmall.png" alt="Rosales National High School Logo"></a>
+        <h5>ROSALES NATIONAL HIGH SCHOOL</h5>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="strands.html">STRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="stem.html">STEM</a></li>
+                        <li><a href="abm.html">ABM</a></li>
+                        <li><a href="humss.html">HUMSS</a></li>
+                        <li><a href="tvl.html">TVL</a></li>
+                    </ul>
+                </li> 
+                <li><a href="events.html">EVENTS</a></li> 
+                <li><a href="contact.html">CONTACT</a></li>   
+                <li><a href="about us.html">ABOUT US</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Humss</h1>
+</section>
+
+<!----- HUMSS ----->
+<section class="strands-tracks">
+    <div class="container">
+        <h1 class="main-heading">HUMSS (Humanities and Social Sciences)</h1>
+        <p class="intro-text">The HUMSS strand at Rosales National High School (RNHS) is designed for students passionate about human behavior, society, and culture. This strand prepares students for careers in education, communication, politics, law, social work, and more by fostering critical thinking, empathy, and communication skills.</p>
+
+        <div class="section">
+            <h2 class="section-heading">Core Subjects</h2>
+            <div class="card-list">
+                <div class="card">Creative Writing</div>
+                <div class="card">Philosophy</div>
+                <div class="card">Introduction to World Religions and Belief Systems</div>
+                <div class="card">Trends, Networks, and Critical Thinking in the 21st Century</div>
+                <div class="card">Disciplines and Ideas in the Social Sciences</div>
+                <div class="card">Disciplines and Ideas in the Applied Social Sciences</div>
+                <div class="card">Politics and Governance</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Skills and Competencies</h2>
+            <p>The HUMSS strand hones skills in communication, critical thinking, social analysis, and empathy. It emphasizes understanding societal issues, cultural diversity, and ethical decision-making.</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-heading">Why Choose HUMSS?</h2>
+            <p>HUMSS prepares students for careers centered around people and society. It nurtures empathy, critical thinking, and cultural awareness, equipping students to become thoughtful leaders and advocates for positive change.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!----- Footer ----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>RNHS is a place where students can grow, learn, 
+        and discover their potential. We’re dedicated 
+        to creating a <br>supportive environment that 
+        encourages academic excellence, creativity, and 
+        personal development. <br>With a focus on building 
+        knowledge, skills, and character, we aim to prepare 
+        every student for a bright <br>and successful future.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by VMA</p>
+</section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+<script>
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+            navLinks.style.right = "0";
+    }
+    function hideMenu(){
+            navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosales National High School - SHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="images/logosmall.png" alt="Rosales National High School Logo"></a>
+        <h5>ROSALES NATIONAL HIGH SCHOOL</h5>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="strands.html">STRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="stem.html">STEM</a></li>
+                        <li><a href="abm.html">ABM</a></li>
+                        <li><a href="humss.html">HUMSS</a></li>
+                        <li><a href="tvl.html">TVL</a></li>
+                    </ul>
+                </li> 
+                <li><a href="events.html">EVENTS</a></li> 
+                <li><a href="contact.html">CONTACT</a></li>   
+                <li><a href="about us.html">ABOUT US</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<!----- contact us ----->
+
+<section class="location">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.3034866074636!2d120.62463637513218!3d15.891482884762572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33913bddb873a57f%3A0x66fa1018e72b51d9!2sRosales%20National%20High%20School!5e1!3m2!1sen!2sph!4v1739805915407!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-home"></i>
+                <span>
+                    <h5>REGION I - ILOCOS REGION PANGASINAN II, BINALONAN</h5>
+                    <p>Rosales Pangasinan Don Antonio Village</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>(075) 582 3376</h5>
+                    <p>Contact Us</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>rosalesnhsshs@gmail.com</h5>
+                    <p>Email Us</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col"> 
+            <form action="https://formspree.io/f/xqaewkwn" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+    </div>
+</section>
+
+<!----- Footer ----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>RNHS is a place where students can grow, learn, 
+        and discover their potential. We’re dedicated 
+        to creating a <br>supportive environment that 
+        encourages academic excellence, creativity, and 
+        personal development. <br>With a focus on building 
+        knowledge, skills, and character, we aim to prepare 
+        every student for a bright <br>and successful future.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by VMA</p>
+</section>
+
+    <!-----JavaScript for Toggle Menu----->
+<script>
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+            navLinks.style.right = "0";
+    }
+    function hideMenu(){
+            navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

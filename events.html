@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosales National High School - SHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="images/logosmall.png" alt="Rosales National High School Logo"></a>
+        <h5>ROSALES NATIONAL HIGH SCHOOL</h5>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="strands.html">STRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="stem.html">STEM</a></li>
+                        <li><a href="abm.html">ABM</a></li>
+                        <li><a href="humss.html">HUMSS</a></li>
+                        <li><a href="tvl.html">TVL</a></li>
+                    </ul>
+                </li> 
+                <li><a href="events.html">EVENTS</a></li> 
+                <li><a href="contact.html">CONTACT</a></li>   
+                <li><a href="about us.html">ABOUT US</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Events</h1>
+</section>
+
+<!----- events ----->
+<section class="events">
+    <div class="row">
+        <div class="events-left">
+            <img src="images/tree.jpg" alt="">
+            <h2>Tree Planting</h2>
+            <p>Together with other Senior High School Organizations, SHS-DRRMC eagerly partaken in the recently completed Tree Planting Activity, this morning, October 16. <br>
+                The said activity highlights the significance pf trees and its impact in our environment. The SDRRMC are encouraging everyone to join such pursuits to cultivate a greener, healthier, and safer home for everyone. <br> - RNHS-SHS DRRMC</p>
+                <br>
+            <p>“𝑻𝒐 𝒑𝒍𝒂𝒏𝒕 𝒂 𝒈𝒂𝒓𝒅𝒆𝒏 𝒊𝒔 𝒕𝒐 𝒅𝒓𝒆𝒂𝒎 𝒐𝒇 𝒕𝒐𝒎𝒐𝒓𝒓𝒐𝒘.” —𝑨𝒖𝒅𝒓𝒆𝒚 𝑯𝒆𝒑𝒃𝒖𝒓𝒏 <br>
+                Today, the Rosales National High School Red Cross Youth Council officers conducted a clean-up drive in the RNHS RCYC garden located near the RNHS STEM building. In this activity, the RCY officers also harvested some of the vegetables that are found in the garden.
+                This only proves that when we put a lot of hard work into something, we can harvest good results. <br> - RNHS RCYC</p> 
+        </div>
+        <div class="events-right"></div>
+    </div>
+</section>
+
+<!----- Footer ----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>RNHS is a place where students can grow, learn, 
+        and discover their potential. We’re dedicated 
+        to creating a <br>supportive environment that 
+        encourages academic excellence, creativity, and 
+        personal development. <br>With a focus on building 
+        knowledge, skills, and character, we aim to prepare 
+        every student for a bright <br>and successful future.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by VMA</p>
+</section>
+
+    <!-----JavaScript for Toggle Menu----->
+<script>
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+            navLinks.style.right = "0";
+    }
+    function hideMenu(){
+            navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosales National High School - TVL Strand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="home.html"><img src="images/logosmall.png" alt="Rosales National High School Logo"></a>
+        <h5>ROSALES NATIONAL HIGH SCHOOL</h5>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="strands.html">STRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="stem.html">STEM</a></li>
+                        <li><a href="abm.html">ABM</a></li>
+                        <li><a href="humss.html">HUMSS</a></li>
+                        <li><a href="tvl.html">TVL</a></li>
+                    </ul>
+                </li> 
+                <li><a href="events.html">EVENTS</a></li> 
+                <li><a href="contact.html">CONTACT</a></li>   
+                <li><a href="about us.html">ABOUT US</a></li> 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>TVL</h1>
+</section>
+
+<!-- TVL Overview Section -->
+<section class="strands-tracks">
+    <div class="container">
+        <h1 class="main-heading">TVL (Technical-Vocational-Livelihood)</h1>
+        <p class="intro-text">The TVL strand offers various specializations for students interested in technical and vocational careers. TVL prepares students for immediate employment, entrepreneurship, or further training in their chosen fields.</p>
+
+        <!-- ICT Track -->
+        <div class="section">
+            <h2 class="section-heading">Information and Communication Technology (ICT)</h2>
+            <div class="card-list">
+                <div class="card">Computer Systems Servicing</div>
+                <div class="card">Web Development</div>
+                <div class="card">Programming</div>
+                <div class="card">Networking</div>
+            </div>
+            <p>ICT focuses on computer hardware, software, and programming, preparing students for careers in tech support, development, and IT services.</p>
+        </div>
+
+        <!-- Home Economics (HE) Track -->
+        <div class="section">
+            <h2 class="section-heading">Home Economics (HE)</h2>
+            <div class="card-list">
+                <div class="card">Food and Beverage Services</div>
+                <div class="card">Bread and Pastry Production</div>
+                <div class="card">Housekeeping</div>
+                <div class="card">Caregiving</div>
+            </div>
+            <p>HE offers practical skills in culinary arts, hospitality, and caregiving, preparing students for careers in the food industry and service sectors.</p>
+        </div>
+
+        <!-- SMAW Track -->
+        <div class="section">
+            <h2 class="section-heading">Shielded Metal Arc Welding (SMAW)</h2>
+            <div class="card-list">
+                <div class="card">Basic Welding Techniques</div>
+                <div class="card">Advanced Welding Techniques</div>
+                <div class="card">Safety Practices</div>
+                <div class="card">Fabrication</div>
+            </div>
+            <p>SMAW teaches students welding skills for construction, repair, and industrial work, focusing on safety and precision.</p>
+        </div>
+
+        <!-- Dressmaking Track -->
+        <div class="section">
+            <h2 class="section-heading">Dressmaking</h2>
+            <div class="card-list">
+                <div class="card">Pattern Making</div>
+                <div class="card">Sewing Techniques</div>
+                <div class="card">Clothing Design</div>
+                <div class="card">Alterations and Repairs</div>
+            </div>
+            <p>Dressmaking focuses on creating garments, teaching design, sewing, and tailoring skills for students pursuing careers in fashion or custom tailoring.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Why Choose TVL?</h2>
+            <p>TVL is ideal for students who prefer hands-on learning and want to be job-ready after Senior High School. It also serves as a pathway for those who plan to continue technical education or entrepreneurship in specialized fields.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>RNHS is a place where students can grow, learn, and discover their potential. We are dedicated to academic excellence, creativity, and personal development, preparing every student for a bright future.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by VMA</p>
+</section>
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+   function showMenu(){
+           navLinks.style.right = "0";
+   }
+   function hideMenu(){
+           navLinks.style.right = "-200px";
+   }
+</script>
+
+</body>
+</html>
